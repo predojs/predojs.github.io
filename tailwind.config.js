@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        '128': '32rem',
+      },
+      backgroundImage: {
+        'headerBackground': "url('./assets/header_background.jpg')",
+      },
+    },
   },
   plugins: [],
 }
