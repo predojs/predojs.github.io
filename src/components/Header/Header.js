@@ -3,7 +3,7 @@ import NavBar from "../NavBar/NavBar";
 import Hero from "../Hero/Hero";
 
 const Header = () => (
-    <header className="bg-slate-700 h-128">
+    <header>
         <NavBar />
         <Hero />
     </header>
