@@ -3,12 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      height: {
-        '128': '32rem',
-      },
-      backgroundImage: {
-        'headerBackground': "url('./assets/header_background.jpg')",
-      },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'dmsans': ['DM Sans', 'sans-serif'],
+      }
     },
   },
   plugins: [],
