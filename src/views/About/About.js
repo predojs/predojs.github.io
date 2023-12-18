@@ -7,7 +7,7 @@ const About = () => (
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: .5, delay: .3, ease: "easeInOut" }}
+        transition={{ duration: .3, delay: .2, ease: "easeInOut" }}
     >
         <h1>O mnie</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus magnam perferendis nihil tenetur quae reprehenderit molestias.</p>
