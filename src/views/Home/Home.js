@@ -7,16 +7,16 @@ import Button from "../../components/Button/Button";
 
 const Home = () => (
     <motion.div 
-        className="text-center flex flex-col items-center gap-6 px-10 pb-12"
+        className="text-center flex flex-col items-center gap-5 px-10 mb-10"
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: .3, delay: .2, ease: "easeInOut" }}
     >
-        <img src={Avatar} alt="avatar" className="rounded-full w-48 h-48 shadow-lg" loading="lazy"/>
-        <h1 className="text-4xl font-semibold text-[#395886] font-poppins">Dawid Predecki</h1>
-        <h3 className="text-2xl font-light font-poppins">Web Developer</h3>
-        <p className="text-lg max-w-lg py-5">Stworzę dla Ciebie stronę internetową, która będzie odzwierciedlać Twoją markę i spełniać Twoje oczekiwania. Odezwij się i razem stwórzmy Twoje miejsce w sieci!</p>
+        <img src={Avatar} alt="avatar" className="rounded-full w-44 h-44 shadow-lg" loading="lazy"/>
+        <h1 className="text-3xl font-semibold text-[#395886] font-poppins">Dawid Predecki</h1>
+        <h3 className="text-xl font-light font-poppins">Web Developer</h3>
+        <p className="pb-4 max-w-lg">Stworzę dla Ciebie stronę internetową, która będzie odzwierciedlać Twoją markę i spełniać Twoje oczekiwania. Odezwij się i razem stwórzmy Twoje miejsce w sieci!</p>
         <div className="flex gap-6 tracking-wider">
             <NavLink to="/contact"><ButtonBg text="Skontaktuj się"/></NavLink>
             <NavLink to="/portfolio"><Button text="Portfolio"/></NavLink>

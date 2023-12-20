@@ -5,7 +5,7 @@ import Footer from '../../components/Footer/Footer';
 import AnimatedRoutes from '../AnimatedRoutes/AnimatedRoutes';
 
 const App = () => (
-    <div className='flex flex-col h-screen justify-between'>
+    <div className='flex flex-col h-[100dvh] justify-between'>
       <BrowserRouter>
         <Header/>
         <AnimatedRoutes />

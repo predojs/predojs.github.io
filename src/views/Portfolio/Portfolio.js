@@ -1,18 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
+import PortfolioProjectTile from "../../components/PortfolioProjectTile/PortfolioProjectTile";
+import AvatarImage from "../../assets/avatar.jpg";
 
 const Portfolio = () => (
-    <motion.div 
-        className=" w-4/5 bg-[#638ECB] rounded-[25px] p-10 shadow-lg mx-auto my-10"
+    <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: .3, delay: .2, ease: "easeInOut" }}
+        className="grid p-5 portfolioSection gap-5"
     >
-        <h1>Portfolio</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus magnam perferendis nihil tenetur quae reprehenderit molestias.</p>
-        <h1>Technologie, których używam</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ducimus libero quod iusto, itaque maiores repellendus enim. Ea expedita accusantium vero ratione exercitationem quisquam. Ipsa eveniet explicabo impedit sed repudiandae!</p>
+        <PortfolioProjectTile imgSource={AvatarImage} projectName="Portfolio Website"/>
+        <PortfolioProjectTile imgSource={AvatarImage} projectName="Portfolio Website"/>
+        <PortfolioProjectTile imgSource={AvatarImage} projectName="Portfolio Website"/>
+        <PortfolioProjectTile imgSource={AvatarImage} projectName="Portfolio Website"/>
+        <PortfolioProjectTile />
+        <PortfolioProjectTile />
     </motion.div>
 );
 
