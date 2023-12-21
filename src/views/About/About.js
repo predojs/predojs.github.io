@@ -1,18 +1,23 @@
 import React from "react";
+import { BsFilePerson, BsFileEarmarkText } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 const About = () => (
-    <motion.div 
-        className=" w-4/5 bg-[#638ECB] rounded-[25px] p-10 shadow-lg mx-auto my-10"
+    <motion.div
+        className="flex justify-center items-center gap-20"
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: .3, delay: .2, ease: "easeInOut" }}
     >
-        <h1>O mnie</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus magnam perferendis nihil tenetur quae reprehenderit molestias.</p>
-        <h1>Technologie, których używam</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ducimus libero quod iusto, itaque maiores repellendus enim. Ea expedita accusantium vero ratione exercitationem quisquam. Ipsa eveniet explicabo impedit sed repudiandae!</p>
+        <div className="flex flex-col items-center gap-3 hover:cursor-pointer hover:gap-5 duration-150 hover:drop-shadow-xl">
+            <BsFilePerson className="text-9xl"/>
+            <h2 className="font-poppins text-3xl">O mnie</h2>
+        </div>
+        <div className="flex flex-col items-center gap-3 hover:cursor-pointer hover:gap-5 duration-150 hover:drop-shadow-xl">
+            <BsFileEarmarkText className="text-9xl"/>
+            <h2 className="font-poppins text-3xl">CV</h2>
+        </div>
     </motion.div>
 );
 

@@ -1,18 +1,24 @@
 import React from "react";
+import { IoIosSend } from "react-icons/io";
 import { motion } from "framer-motion";
 
 const Contact = () => (
     <motion.div 
-        className=" w-4/5 bg-[#638ECB] rounded-[25px] p-10 shadow-lg mx-auto my-10"
+        className="p-8 flex justify-center"
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: .3, delay: .2, ease: "easeInOut" }}
     >
-        <h1>Contact</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus magnam perferendis nihil tenetur quae reprehenderit molestias.</p>
-        <h1>Technologie, których używam</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ducimus libero quod iusto, itaque maiores repellendus enim. Ea expedita accusantium vero ratione exercitationem quisquam. Ipsa eveniet explicabo impedit sed repudiandae!</p>
+        <div className="py-10 px-7 shadow-lg w-[90%] text-lg">
+            <h1 className="py-5 text-2xl font-semibold font-poppins">Odezwij się!</h1>
+            <form action="" className="flex flex-col items-center gap-3">
+                <input required type="text" name="name" placeholder="Imię" className="w-full p-2"/>
+                <input required type="text" name="email" placeholder="E-mail" className="w-full p-2"/>
+                <textarea required name="message" rows="10" placeholder="Wiadomość" className="w-full p-2"></textarea>
+                <button className="flex items-center gap-1 mt-3 border-2 border-blue-500 font-semibold text-xl font-poppins text-blue-500 px-4 py-2 rounded-lg hover:text-slate-800 hover:border-slate-800 hover:cursor-pointer transition-all duration-150"><span>Wyślij</span> <IoIosSend /></button>
+            </form>
+        </div>
     </motion.div>
 );
 

@@ -7,7 +7,7 @@ import AnimatedRoutes from '../AnimatedRoutes/AnimatedRoutes';
 const App = () => (
     <div className='flex flex-col h-[100dvh] justify-between'>
       <BrowserRouter>
-        <Header/>
+        <Header />
         <AnimatedRoutes />
         <Footer />
       </BrowserRouter>

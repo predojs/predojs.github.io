@@ -9,12 +9,12 @@ const Portfolio = () => (
         animate={{ y: 0, opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: .3, delay: .2, ease: "easeInOut" }}
-        className="grid p-5 portfolioSection gap-5"
+        className="grid p-3 portfolioSection gap-5"
     >
         <PortfolioProjectTile imgSource={AvatarImage} projectName="Portfolio Website"/>
-        <PortfolioProjectTile imgSource={AvatarImage} projectName="Portfolio Website"/>
-        <PortfolioProjectTile imgSource={AvatarImage} projectName="Portfolio Website"/>
-        <PortfolioProjectTile imgSource={AvatarImage} projectName="Portfolio Website"/>
+        <PortfolioProjectTile />
+        <PortfolioProjectTile />
+        <PortfolioProjectTile />
         <PortfolioProjectTile />
         <PortfolioProjectTile />
     </motion.div>

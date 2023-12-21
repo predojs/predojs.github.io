@@ -11,7 +11,7 @@ const AnimatedRoutes = () => {
 
     return (
         <AnimatePresence mode='wait'>
-            <Routes key={location.pathname} location={location}>
+            <Routes key={location.pathname} location={location} className="overflow-auto">
                 <Route path='/' Component={Home}/>
                 <Route path='/about' Component={About}/>
                 <Route path='/portfolio' Component={Portfolio}/>

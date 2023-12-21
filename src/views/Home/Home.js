@@ -13,7 +13,7 @@ const Home = () => (
         exit={{ opacity: 0 }}
         transition={{ duration: .3, delay: .2, ease: "easeInOut" }}
     >
-        <img src={Avatar} alt="avatar" className="rounded-full w-44 h-44 shadow-lg" loading="lazy"/>
+        <img src={Avatar} alt="avatar" className="rounded-full border-4 border-white drop-shadow-xl w-44 h-44 " loading="lazy"/>
         <h1 className="text-3xl font-semibold text-[#395886] font-poppins">Dawid Predecki</h1>
         <h3 className="text-xl font-light font-poppins">Web Developer</h3>
         <p className="pb-4 max-w-lg">Stworzę dla Ciebie stronę internetową, która będzie odzwierciedlać Twoją markę i spełniać Twoje oczekiwania. Odezwij się i razem stwórzmy Twoje miejsce w sieci!</p>
